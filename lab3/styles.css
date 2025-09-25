@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    background-color: white; 
+}
+
+header {
+    background-color: #000000; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #333; 
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 90px;
+    background-color: white; 
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+img.primeira {
+    width: 350px;
+  height: 200px;
+}
+
+.quadro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.quadro img{
+    width:120px;
+    height:80px;
+    border-radius: 20px;
+}
+
+.poema {
+    font-family: "Georgia", serif;
+}
+
+
+.poema p {
+    margin: 6px 0;
+    font-size: 1.1em;
+}
+
+.poema p:nth-child(odd) {
+    color: #333;
+    font-style: italic;
+}
+
+.poema p:nth-child(even) {
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+.poema p:nth-child(1) {
+    font-size: 1.3em;
+    text-decoration: underline;
+}
+
+.poema p:nth-last-child(1) {
+    color: darkred;
+    font-weight: bold;
+    font-style: italic;
+}
+
+table {
+    width: 30%;
+    
+    border-collapse: collapse;
+    text-align: left;
+    background-color: #f9f9f9;
+}
+
+th, td {
+    border: 1px solid #444;
+    padding: 10px;
+}
+
+th {
+    background-color: #d9e6f2;
+    color: #003366;
+    font-weight: bold;
+}
+
+td {
+    color: #004d00;
+}
+
+table a {
+    color: darkred;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 10px;            
+    margin: 20px 0;
+}
+
+.galeria img {
+    width: 33%;           
+    height: 250px;        
+    object-fit: cover;    
+    border-radius: 5px;   
+}
+
+.home {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;            
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2); 
+    border-radius: 5px;
+}
+
