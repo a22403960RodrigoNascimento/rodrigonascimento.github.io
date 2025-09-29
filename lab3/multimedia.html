@@ -1,79 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <meta charset="UTF-8">
-        <title>Leiria</title>
-        <link rel="stylesheet" href="styles.css"
-    </head>
-    <body>
-        <header>
-            <h1>Leiria</h1>
-            
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <title>Leiria - Multimédia</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <main>
+        <h2>Multimédia</h2>
+        <p>Nesta página encontra conteúdos multimédia</p>
 
-        <nav>
-                <a href="index.html">Home</a>
-                <a href="local.html">Localização</a>
-                <a href="multimedia.html">Multimédia</a>
-                <a href="info.html">Informação</a>
-            </nav>
+        <!-- Atalhos melhorados -->
+        <div class="atalhos">
+            <a href="#fotografias">📷 Fotografias</a>
+            <a href="#video">🎥 Vídeo</a>
+            <a href="#poema">✍️ Poema</a>
+        </div>
 
-        <main>
-            <h2>Multimédia</h2>
-            <p>Nesta página encontra conteúdos multimedia</p>
+        <!-- FOTOGRAFIAS -->
+        <section id="fotografias" class="secao-fotos">
+            <h3>Fotografias</h3>
 
-            <p>
-            <a href="#fotografias">Fotografias</a> |
-            <a href="#video">Vídeo</a> |
-            <a href="#poema">Poema</a>
-            </p>
+            <div class="banner">
+                <img src="images/quadro1.jpg" alt="Fotografia destaque">
+                <div class="frase">Leiria, cidade de história e inspiração</div>
+            </div>
 
-
-            <section>
-                <h3 id="fotografias">Fotografias</h3>
-                <div class="quadro">
-                <img src="images/quadro1.jpg" alt="quadro1">
+            <div class="quadro">
                 <img src="images/quadro2.jpg" alt="quadro2">
                 <img src="images/quadro3.jpg" alt="quadro3">
                 <img src="images/quadro4.jpg" alt="quadro4">
-                <img src="images/quadro5.jpg" alt="quadro5">
-                <img src="images/quadro6.jpg" alt="quadro6">
-                <img src="images/quadro7.jpg" alt="quadro7">
-                <img src="images/quadro8.jpg" alt="quadro8">
-                </div>
-            </section>
-
-            <section>
-                <h3 id="video">Vídeo</h3>
-                <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Z6HlLuV7ayA?si=tPKC_v9YmM3P_RCN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            </section>
+        </section>
 
-            <section>
-                <h3 id="poema">Poema</h3>
-                <div class="poema">
-                     <p>No alto ergue-se o castelo, guardião da memória,</p>
-                     <p>Que viu reis e trovadores, no fluir da história.</p>
-                     <p>D. Dinis plantou o pinhal, verde mar sem fim,</p>
-                    <p>Que deu força às caravelas que partiram daqui.</p>
+        <!-- VÍDEO -->
+        <section id="video" class="secao-video">
+            <h3>Vídeo</h3>
+            <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/Z6HlLuV7ayA?si=tPKC_v9YmM3P_RCN"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
 
-                     <p>O Lis corre sereno, levando consigo a canção,</p>
-                     <p>Das gentes que o acompanham com orgulho e devoção.</p>
-                    <p>Entre ruas e praças ecoa tradição,</p>
-                     <p>Na doçura das Brisas do Lis, vive a paixão.</p>
+        <!-- POEMA -->
+        <section id="poema" class="secao-poema">
+            <h3>Poema</h3>
+            <div class="poema">
+                <p>No alto ergue-se o castelo, guardião da memória,</p>
+                <p>Que viu reis e trovadores, no fluir da história.</p>
+                <p>D. Dinis plantou o pinhal, verde mar sem fim,</p>
+                <p>Que deu força às caravelas que partiram daqui.</p>
 
-                    <p>Leiria é música, é arte, cidade de criação,</p>
-                    <p>Coração do Centro, feita de inspiração.</p>
-                     <p>Entre o mar e a serra, um refúgio encantado,</p>
-                     <p>Onde passado e futuro caminham lado a lado.</p>
+                <p>O Lis corre sereno, levando consigo a canção,</p>
+                <p>Das gentes que o acompanham com orgulho e devoção.</p>
+                <p>Entre ruas e praças ecoa tradição,</p>
+                <p>Na doçura das Brisas do Lis, vive a paixão.</p>
 
-                    </div>
-            </section>
+                <p>Leiria é música, é arte, cidade de criação,</p>
+                <p>Coração do Centro, feita de inspiração.</p>
+                <p>Entre o mar e a serra, um refúgio encantado,</p>
+                <p>Onde passado e futuro caminham lado a lado.</p>
+            </div>
+        </section>
+    </main>
 
-        </main>
-        <footer>
-            <p>Portugal, 2025</p>
-        </footer>
-    </body>
+    <footer>
+        <p>Portugal, 2025</p>
+    </footer>
+</body>
 </html>

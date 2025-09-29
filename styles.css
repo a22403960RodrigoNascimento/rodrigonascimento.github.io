@@ -1,5 +1,224 @@
-body {
-    background-color: #b3b3b3;
+/* Reset global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-img { width: 300px}
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #111;
+  scroll-behavior: smooth; /* scroll suave */
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url("images/webinterface2.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Nome minimalista canto superior esquerdo (fixo) */
+.logo {
+  position: fixed;
+  top: 20px;
+  left: 30px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  z-index: 1001;
+}
+
+/* Menu (fixo canto superior direito) */
+nav {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  z-index: 1000;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: #00c6ff;
+}
+
+/* Texto central */
+.hero-text h1 {
+  font-size: 2.0rem;
+  font-weight: 100;
+  background: rgba(0, 0, 0, 0);
+  padding: 12px 20px;
+  border-radius: 6px;
+}
+
+/* Logotipo canto inferior esquerdo */
+.hero-logo {
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+}
+
+.hero-logo img {
+  width: 80px;   /* podes ajustar */
+  height: auto;
+  opacity: 0.9;
+   
+}
+
+/* Secções genéricas */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #00c6ff;
+}
+section p {
+  color: #ddd;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Secção de Projetos */
+.projetos {
+  background-color: #0f2027;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.projetos h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #00c6ff;
+}
+
+.projetos p {
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+.projetos-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Cards como links */
+.card {
+  display: block;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 220px;
+  text-align: left;
+  transition: transform 0.3s, border-color 0.3s;
+  cursor: pointer;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #00c6ff;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: #00c6ff;
+}
+
+/* Secção Disciplinas */
+.disciplinas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 80px 20px;
+  background-color: #111;
+  flex-wrap: wrap;
+}
+
+.disciplina-texto {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+}
+
+.disciplina-texto h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #00c6ff;
+}
+
+.disciplina-texto p {
+  font-size: 1rem;
+  color: #ddd;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.disciplina-img {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.disciplina-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsivo - telemóvel */
+@media (max-width: 768px) {
+  /* Menu fica vertical */
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Disciplinas */
+  .disciplinas {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .disciplina-texto {
+    text-align: center;
+  }
+
+  /* Esconde o logotipo em ecrãs pequenos */
+  .hero-logo {
+    display: none;
+  }
+}
