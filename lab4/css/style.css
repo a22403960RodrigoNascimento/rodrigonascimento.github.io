@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 30px;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+input {
+  padding: 5px;
+  margin: 5px;
+}
+
+#caixa {
+  background-color: lightblue;
+  border: 2px solid gray;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+}

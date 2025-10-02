@@ -24,7 +24,7 @@ body {
   text-align: center;
 }
 
-/* Nome minimalista canto superior esquerdo (fixo) */
+/* Nome canto superior esquerdo (fixo) */
 .logo {
   position: fixed;
   top: 20px;
