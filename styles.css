@@ -12,7 +12,9 @@ body {
   scroll-behavior: smooth; /* scroll suave */
 }
 
-/* Hero */
+/* ============================= */
+/*          HERO SECTION         */
+/* ============================= */
 .hero {
   position: relative;
   height: 100vh;
@@ -24,7 +26,7 @@ body {
   text-align: center;
 }
 
-/* Nome canto superior esquerdo (fixo) */
+/* Nome canto superior esquerdo */
 .logo {
   position: fixed;
   top: 20px;
@@ -54,7 +56,7 @@ nav {
   text-decoration: none;
   color: #fff;
   font-weight: 300;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
 .menu li a:hover {
@@ -63,7 +65,7 @@ nav {
 
 /* Texto central */
 .hero-text h1 {
-  font-size: 2.0rem;
+  font-size: 2rem;
   font-weight: 100;
   background: rgba(0, 0, 0, 0);
   padding: 12px 20px;
@@ -78,29 +80,34 @@ nav {
 }
 
 .hero-logo img {
-  width: 80px;   /* podes ajustar */
+  width: 80px;
   height: auto;
   opacity: 0.9;
-   
 }
 
-/* Secções genéricas */
+/* ============================= */
+/*         SEÇÕES GERAIS         */
+/* ============================= */
 section {
   padding: 80px 20px;
   text-align: center;
 }
+
 section h2 {
   font-size: 2rem;
   margin-bottom: 15px;
   color: #00c6ff;
 }
+
 section p {
   color: #ddd;
   max-width: 700px;
   margin: auto;
 }
 
-/* Secção de Projetos */
+/* ============================= */
+/*       PROJETOS / LABS         */
+/* ============================= */
 .projetos {
   background-color: #0f2027;
   padding: 80px 20px;
@@ -125,7 +132,7 @@ section p {
   flex-wrap: wrap;
 }
 
-/* Cards como links */
+/* Cards (cada lab) */
 .card {
   display: block;
   text-decoration: none;
@@ -135,8 +142,9 @@ section p {
   padding: 20px;
   width: 220px;
   text-align: left;
-  transition: transform 0.3s, border-color 0.3s;
+  transition: all 0.3s ease;
   cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card h3 {
@@ -150,12 +158,16 @@ section p {
   color: #ddd;
 }
 
+/* Efeito hover suave e moderno */
 .card:hover {
   transform: translateY(-8px);
   border-color: #00c6ff;
+  box-shadow: 0 0 15px rgba(0, 198, 255, 0.3);
 }
 
-/* Secção Disciplinas */
+/* ============================= */
+/*       SECÇÃO DISCIPLINAS      */
+/* ============================= */
 .disciplinas {
   display: flex;
   justify-content: center;
@@ -198,16 +210,18 @@ section p {
   border-radius: 8px;
 }
 
-/* Responsivo - telemóvel */
+/* ============================= */
+/*         RESPONSIVIDADE        */
+/* ============================= */
 @media (max-width: 768px) {
-  /* Menu fica vertical */
+  /* Menu vertical */
   .menu {
     flex-direction: column;
     align-items: center;
     gap: 10px;
   }
 
-  /* Disciplinas */
+  /* Disciplinas em coluna */
   .disciplinas {
     flex-direction: column;
     text-align: center;
@@ -220,5 +234,11 @@ section p {
   /* Esconde o logotipo em ecrãs pequenos */
   .hero-logo {
     display: none;
+  }
+
+  /* Cards responsivos */
+  .card {
+    width: 85%;
+    text-align: center;
   }
 }

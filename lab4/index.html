@@ -9,16 +9,24 @@
 <body>
  
   <main>
-    <h2 id="passa" onmouseover="this.textContent='Obrigado por passares por aqui!'" onmouseout="this.textContent='1. Passa por aqui!'">1. Passa por aqui!</h2>
+    <h2 id="passa" 
+        onmouseover="this.textContent='Obrigado por passares por aqui!'" 
+        onmouseout="this.textContent='1. Passa por aqui!'">
+      1. Passa por aqui!
+    </h2>
 
     <h2 id="pinta">2. Pinta-me!</h2>
     <button onclick="document.getElementById('pinta').style.color='red'">Red</button>
     <button onclick="document.getElementById('pinta').style.color='green'">Green</button>
     <button onclick="document.getElementById('pinta').style.color='blue'">Blue</button>
 
-    <h2>3. Experimenta escrever...</h2>
-    <input id="caixa" type="text" oninput="this.style.backgroundColor=['lightblue','lightgreen','lightpink'][this.value.length%3]" style="background-color:lightblue;border:2px solid gray;padding:5px;">
-
+    <!-- Linha de input corrigida -->
+    <div class="linha-input">
+      <h2>3. Experimenta escrever...</h2>
+      <input id="caixa" type="text" 
+             oninput="this.style.backgroundColor=['lightblue','lightgreen','lightpink'][this.value.length%3]" 
+             style="background-color:lightblue;border:2px solid gray;padding:5px;">
+    </div>
 
     <h2>4. Escolha uma cor em inglês:</h2>
     <form onsubmit="document.body.style.backgroundColor=document.getElementById('corEscolhida').value; event.preventDefault();">
@@ -26,7 +34,10 @@
       <input type="submit" value="submeter">
     </form>
 
-    <h2>5. <button onclick='document.getElementById("contador").textContent=++window.c'>Conta!</button> <span id="contador">0</span></h2>
+    <h2>5. 
+      <button onclick='document.getElementById("contador").textContent=++window.c'>Conta!</button> 
+      <span id="contador">0</span>
+    </h2>
   </main>
 
   <footer><p>DIW 2025</p></footer>

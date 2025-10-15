@@ -23,11 +23,11 @@ input {
   border: 2px solid gray;
 }
 
-/* Agrupa o título e o input na mesma linha */
+
 .linha-input {
   display: flex;
   align-items: center;
-  gap: 10px; /* espaço entre o texto e o input */
+  gap: 10px; 
 }
 
 footer {
